@@ -15,7 +15,7 @@
         .mt-5 {
           margin-top: 15rem!important;
         }
-        .block__text {
+        .share__text {
           h5 {
             color: #fff;
             font-size: 3.25rem;
@@ -24,7 +24,7 @@
             width: 383px;
           }
         }
-        .slider-video {
+        .share__slider {
           .slider-elements {
             display: flex;
             align-items: flex-start;
@@ -39,7 +39,7 @@
   p {
     color: #a7a7a7;
   }
-  .slider-video {
+  .share__slider {
     flex-direction: column;
     @include slider;
     .slider-elements {
@@ -91,7 +91,7 @@ $prefix: "slick-slide-control";
           }
         }
         .col-md-6 {
-          .block__text {
+          .share__text {
             margin-top: -25%;
           }
         }
@@ -110,7 +110,7 @@ $prefix: "slick-slide-control";
       }
 
         .col-md-6 {
-          .block__text {
+          .share__text {
             margin-top: -100px;
             h5 {
             font-size: 2.25rem!important;
@@ -119,7 +119,7 @@ $prefix: "slick-slide-control";
               font-size: 14px;
             }
           }
-          .slider-video {
+          .share__slider {
             .slider-elements {
               align-items: center;
               img {
@@ -151,7 +151,7 @@ $prefix: "slick-slide-control";
           .mt-5 {
             margin-top: 8rem!important;
           }
-          .block__text {
+          .share__text {
             h5 {
               text-align: center;
             }
@@ -166,13 +166,13 @@ $prefix: "slick-slide-control";
     .container-fluid {
       .row {
         .col-md-6 {
-          .block__text {
+          .share__text {
             align-items: center;
             h5 {
               text-align: center;
             }
           }
-          .slider-video {
+          .share__slider {
             .slider-elements {
               justify-content: center;
             }
@@ -209,13 +209,13 @@ $prefix: "slick-slide-control";
           }
         }
         .col-md-6 {
-          .block__text {
+          .share__text {
             p {
               width: 290px;
               text-align: center;
             }
           }
-          .slider-video {
+          .share__slider {
             .slider-elements {
              flex-direction: column;
               img {

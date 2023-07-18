@@ -1,5 +1,5 @@
 @import "mixin", "variables";
-#why-ama {
+#overview {
   margin: auto;
   .container {
     h1 {
@@ -23,8 +23,13 @@
     }
   }
 }
+/*
+  ========================================
+  media for overview
+  ========================================
+*/
 @media  screen and (max-width: 1405px) {
-  #why-ama {
+  #overview {
     margin-top: 20px;
 
     .container {

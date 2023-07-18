@@ -1,5 +1,5 @@
 @import "mixin", "variables";
-.slider__banner {
+.banner__slider {
   background-color: $red-color;
   height: 655px;
   position: relative;
@@ -67,7 +67,7 @@
   ========================================
 */
 @media screen and (max-width: 1445px) {
-  .slider__banner {
+  .banner__slider {
     .container-fluid {
       .row {
         .col-md-4 {
@@ -83,7 +83,7 @@
   }
 }
 @media screen and (max-width: 1405px) {
-  .slider__banner {
+  .banner__slider {
     top: 123px;
     .container-fluid {
       .row {
@@ -98,7 +98,7 @@
 }
 
 @media screen and (max-width: 1138px) {
-  .slider__banner {
+  .banner__slider {
     .container-fluid {
       .row {
         .col-md-4 {
@@ -114,7 +114,7 @@
   }
 }
 @media screen and (max-width: 915px) {
-  .slider__banner {
+  .banner__slider {
     .container-fluid {
       .row {
         .col-md-4 {
@@ -133,7 +133,7 @@
   }
 }
 @media screen and (max-width: 897px) {
-  .slider__banner {
+  .banner__slider {
     .container-fluid {
       .row {
         .col-md-4 {
@@ -155,7 +155,7 @@
   }
 }
 @media screen and (max-width: 763px) {
-  .slider__banner {
+  .banner__slider {
     .container-fluid {
       .row {
         .col-md-4 {
@@ -180,7 +180,7 @@
   }
 }
 @media screen and (max-width: 631px) {
-  .slider__banner {
+  .banner__slider {
     height: 487px;
     button {
       display: none;
@@ -219,7 +219,7 @@
   }
 }
 @media screen and (max-width: 479px) {
-  .slider__banner {
+  .banner__slider {
     height: 458px;
     .container-fluid {
       .row {
@@ -236,7 +236,7 @@
   }
 }
 @media screen and (max-width: 405px) {
-  .slider__banner {
+  .banner__slider {
     height: 405px;
     .container-fluid {
       .row {
@@ -256,7 +256,7 @@
   }
 }
 @media screen and (max-width: 380px) {
-  .slider__banner {
+  .banner__slider {
     height: 368px;
     .container-fluid {
       .row {
