@@ -4,7 +4,7 @@
     ========================================
 */
 $(document).ready(function() {
-    $('.slider__banner .row, .slider-video, .slider-photos').slick({
+    $('.banner__slider .row, .share__slider, .features__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
@@ -20,23 +20,24 @@ $(document).ready(function() {
     ========================================
 */
 document.addEventListener("DOMContentLoaded", function() {
-    const imageContainers = document.querySelectorAll(".image-container");
+    const galleryBlocks = document.querySelectorAll(".gallery__block");
 
-    imageContainers.forEach(function(container) {
-        const galleryImage = container.querySelector(".gallery");
-        const blockUnder = container.querySelector(".block-under");
+    galleryBlocks.forEach(function(block) {
+        const galleryImage = block.querySelector(".photo");
+        const blockUnder = block.querySelector(".gallery__block-under");
 
-        container.addEventListener("mouseenter", function() {
+        block.addEventListener("mouseenter", function() {
             galleryImage.style.transform = "translateY(-84px)";
             blockUnder.style.backgroundColor = "#000000";
         });
 
-        container.addEventListener("mouseleave", function() {
+        block.addEventListener("mouseleave", function() {
             galleryImage.style.transform = "none";
             blockUnder.style.backgroundColor = "rgba(0, 0, 0, 1)";
         });
     });
 });
+
 /*
     ========================================
     like
