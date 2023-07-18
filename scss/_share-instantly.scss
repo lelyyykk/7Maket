@@ -1,6 +1,7 @@
 @import "mixin", "variables";
 #share {
   background: #262626;
+  height: 736px;
   .container-fluid {
     .row {
       .col-md-6 {
@@ -11,6 +12,9 @@
 
         }
       }
+      .mt-5 {
+        margin-top: 4.6rem!important;
+      }
       .col-md-6 {
         .mt-5 {
           margin-top: 15rem!important;
@@ -18,10 +22,13 @@
         .share__text {
           h5 {
             color: #fff;
-            font-size: 3.25rem;
+            font-size: 3.2rem;
+            margin-top: -60px;
+            margin-bottom: 18px;
           }
           p {
             width: 383px;
+            margin-bottom: 59px;
           }
         }
         .share__slider {
@@ -83,6 +90,7 @@ $prefix: "slick-slide-control";
 */
 @media screen and (max-width: 1385px) {
   #share {
+    height: inherit;
     .container-fluid {
       .row {
         .col-md-6 {
@@ -92,7 +100,7 @@ $prefix: "slick-slide-control";
         }
         .col-md-6 {
           .share__text {
-            margin-top: -25%;
+            margin-top: -15%;
           }
         }
       }
@@ -154,6 +162,12 @@ $prefix: "slick-slide-control";
           .share__text {
             h5 {
               text-align: center;
+              margin-top: 0;
+              margin-bottom: 5px;
+            }
+            p {
+              margin-top: 5px;
+              margin-bottom: 0;
             }
           }
         }
@@ -170,7 +184,9 @@ $prefix: "slick-slide-control";
             align-items: center;
             h5 {
               text-align: center;
+
             }
+
           }
           .share__slider {
             .slider-elements {

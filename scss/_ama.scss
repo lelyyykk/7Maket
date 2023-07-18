@@ -1,26 +1,38 @@
 @import "mixin", "variables";
 #overview {
   margin: auto;
+  height: 597px;
   .container {
     h1 {
-      font-size: 3.3rem;
+      font-size: 3.1rem;
     }
     .mt-5 {
-      margin-top: 11rem!important;
+      margin-top: 6.1rem!important;
     }
     .row {
-      h5 {
-        color: $grey-color;
-        font-size: 1.15rem;
-        font-weight: 600;
+      .col-md-4 {
+        .focus {
+          margin-left: -40px;
+          margin-top: 10px;
+        }
+        }
+        h5 {
+          color: $grey-color;
+          font-size: 1.15rem;
+          font-weight: 600;
+        }
+        .my-4 {
+          margin-bottom: 0.1rem!important;
+        }
+        p {
+          color: $grey-color;
+        }
       }
-      .my-4 {
-        margin-bottom: 0.1rem!important;
-      }
-      p {
-        color: $grey-color;
-      }
+
     }
+  }
+  .my-4 {
+    margin-top: 3.4rem!important;
   }
 }
 /*
@@ -37,5 +49,10 @@
         margin-top: 10rem !important;
       }
     }
+  }
+}
+@media  screen and (max-width: 800px) {
+  #overview {
+    height: inherit;
   }
 }

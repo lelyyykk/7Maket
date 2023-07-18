@@ -15,7 +15,7 @@
       .col-4 {
         img {
           margin-left: -30px;
-          margin-top: -8px;
+          margin-top: -13px;
         }
       }
       .col-8 {
@@ -110,6 +110,7 @@
           justify-content: center;
           align-items: center;
           z-index: 3;
+          top: 40px;
           .bar {
             width: 45px;
             height: 6px;
@@ -179,6 +180,10 @@
     .col-8 {
       .header__nav {
         margin-left: 145px;
+
+        .header__burger-menu {
+          top: 42px;
+        }
       }
     }
   }

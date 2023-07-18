@@ -2,6 +2,7 @@
 
 #features  {
   background: #313131;
+  height: 801px;
   .container-fluid {
     .row {
       .col {
@@ -57,6 +58,9 @@
           }
         }
       }
+      .col {
+        margin-top: 39px;
+      }
     }
   }
   p {
@@ -81,6 +85,7 @@ $prefix: "slick-slide-control";
     height: 682px;
   }
   #features {
+    height: inherit;
     .container-fluid{
       .row {
         .col {

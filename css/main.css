@@ -64,7 +64,7 @@ button {
 
 .banner__slider {
   background-color: #de5d5d;
-  height: 659px;
+  height: 661px;
   position: relative;
   /*
   top: 125px;
@@ -98,7 +98,8 @@ button {
   margin: 0 10px;
 }
 .banner__slider button {
-  top: 90%;
+  top: 594px;
+  margin-left: -27px;
   z-index: 1;
 }
 .banner__slider .slick-dots {
@@ -166,36 +167,6 @@ button {
   font-size: 30px;
   margin: 0;
   padding: 16px 11px;
-}
-
-/*поміняй потім від 20 до 27, бо ти в index один блок заархівувала*/
-button#slick-slide-control0 {
-  border-radius: 50%;
-  border: 1px solid #fff;
-  height: 14px;
-  width: 15px;
-  background-color: transparent;
-  margin: 2px;
-}
-
-/*поміняй потім від 20 до 27, бо ти в index один блок заархівувала*/
-button#slick-slide-control1 {
-  border-radius: 50%;
-  border: 1px solid #fff;
-  height: 14px;
-  width: 15px;
-  background-color: transparent;
-  margin: 2px;
-}
-
-/*поміняй потім від 20 до 27, бо ти в index один блок заархівувала*/
-button#slick-slide-control2 {
-  border-radius: 50%;
-  border: 1px solid #fff;
-  height: 14px;
-  width: 15px;
-  background-color: transparent;
-  margin: 2px;
 }
 
 /*
@@ -311,7 +282,7 @@ button#slick-slide-control2 {
     height: 368px;
   }
   .banner__slider .container-fluid .row .col-md-4 .slider-item img {
-    width: 341px;
+    width: 325px;
     height: 363px;
   }
   .banner__slider .container-fluid .row .col-md-4 .slider-item .slider-item__container a {
@@ -324,23 +295,27 @@ button#slick-slide-control2 {
 }
 #overview {
   margin: auto;
+  height: 597px;
 }
 #overview .container h1 {
-  font-size: 3.3rem;
+  font-size: 3.1rem;
 }
 #overview .container .mt-5 {
-  margin-top: 11rem !important;
+  margin-top: 6.1rem !important;
 }
-#overview .container .row h5 {
+#overview .container .row .col-md-4 h5 {
   color: #6a6a6a;
   font-size: 1.15rem;
   font-weight: 600;
 }
-#overview .container .row .my-4 {
+#overview .container .row .col-md-4 .my-4 {
   margin-bottom: 0.1rem !important;
 }
-#overview .container .row p {
+#overview .container .row .col-md-4 p {
   color: #6a6a6a;
+}
+#overview .my-4 {
+  margin-top: 3.4rem !important;
 }
 
 /*
@@ -356,21 +331,33 @@ button#slick-slide-control2 {
     margin-top: 10rem !important;
   }
 }
+@media screen and (max-width: 800px) {
+  #overview {
+    height: inherit;
+  }
+}
 #share {
   background: #262626;
+  height: 736px;
 }
 #share .container-fluid .row .col-md-6 .mt-5 {
   margin-top: 17rem !important;
+}
+#share .container-fluid .row .mt-5 {
+  margin-top: 4.6rem !important;
 }
 #share .container-fluid .row .col-md-6 .mt-5 {
   margin-top: 15rem !important;
 }
 #share .container-fluid .row .col-md-6 .share__text h5 {
   color: #fff;
-  font-size: 3.25rem;
+  font-size: 3.2rem;
+  margin-top: -60px;
+  margin-bottom: 18px;
 }
 #share .container-fluid .row .col-md-6 .share__text p {
   width: 383px;
+  margin-bottom: 59px;
 }
 #share .container-fluid .row .col-md-6 .share__slider .slider-elements {
   display: flex;
@@ -463,11 +450,14 @@ button#slick-slide-control12 {
     ========================================
 */
 @media screen and (max-width: 1385px) {
+  #share {
+    height: inherit;
+  }
   #share .container-fluid .row .col-md-6 .iphone {
     width: 500px;
   }
   #share .container-fluid .row .col-md-6 .share__text {
-    margin-top: -25%;
+    margin-top: -15%;
   }
 }
 @media screen and (max-width: 945px) {
@@ -507,6 +497,12 @@ button#slick-slide-control12 {
   }
   #share .container-fluid .row .col-md-6 .share__text h5 {
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  #share .container-fluid .row .col-md-6 .share__text p {
+    margin-top: 5px;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -560,6 +556,7 @@ button#slick-slide-control12 {
 }
 #features {
   background: #313131;
+  height: 801px;
 }
 #features .container-fluid .row .col .features__title h5 {
   color: #fff;
@@ -602,6 +599,9 @@ button#slick-slide-control12 {
 #features .container-fluid .row .col .features__slider .slider-items div p {
   color: #999999;
   width: 270px;
+}
+#features .container-fluid .row .col {
+  margin-top: 39px;
 }
 #features p {
   color: #a7a7a7;
@@ -690,6 +690,9 @@ button#slick-slide-control27 {
 @media screen and (max-width: 1198px) {
   .img-nexus {
     height: 682px;
+  }
+  #features {
+    height: inherit;
   }
   #features .container-fluid .row .col .features__slider {
     width: 360px;
@@ -1137,7 +1140,7 @@ textarea.error::placeholder {
 }
 .header .container .row .col-4 img {
   margin-left: -30px;
-  margin-top: -8px;
+  margin-top: -13px;
 }
 .header .container .row .col-8 {
   display: flex;
@@ -1221,6 +1224,7 @@ textarea.error::placeholder {
     justify-content: center;
     align-items: center;
     z-index: 3;
+    top: 40px;
   }
   .header .col-8 .header__nav .header__burger-menu .bar {
     width: 45px;
@@ -1274,6 +1278,9 @@ textarea.error::placeholder {
   }
   .header .col-8 .header__nav {
     margin-left: 145px;
+  }
+  .header .col-8 .header__nav .header__burger-menu {
+    top: 42px;
   }
 }
 @media screen and (max-width: 370px) {
