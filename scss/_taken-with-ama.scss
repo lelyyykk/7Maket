@@ -1,11 +1,11 @@
 @import "mixin";
 @import "variables";
-#taken-ama {
+#gallery {
   .container-fluid {
     .flex-column {
       position: relative;
 
-      .title-with-ama {
+      .gallery__title {
         height: 305px;
         justify-content: center;
         margin: auto;
@@ -23,15 +23,15 @@
       }
     }
 
-    .block-with-photo {
+    .gallery__container {
       display: flex;
       justify-content: space-between;
 
       .col-md-3 {
         padding: 0;
 
-        .image-container {
-          .gallery {
+        .gallery__block {
+          .photo {
             width: 100%;
             height: auto;
             transition: transform 0.4s ease;
@@ -39,7 +39,7 @@
             position: relative;
           }
 
-          .block-under {
+          .gallery__block-under {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -72,11 +72,16 @@
     }
   }
 }
+/*
+    ========================================
+    media for gallery
+    ========================================
+*/
 @media screen and (max-width: 1200px) {
-  #taken-ama {
+  #gallery {
     .container-fluid {
       .flex-column {
-        .title-with-ama {
+        .gallery__title {
           h5 {
             font-size: 2rem!important;
           }
@@ -86,9 +91,9 @@
   }
 }
 @media screen and (max-width: 767px) {
-  #taken-ama {
+  #gallery {
     .container-fluid {
-      .block-with-photo {
+      .gallery__container {
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
@@ -96,9 +101,9 @@
   }
 }
 @media screen and (max-width: 510px) {
-  #taken-ama {
+  #gallery {
     .container-fluid {
-      .block-with-photo {
+      .gallery__container {
         display: grid;
         grid-template-columns: 1fr;
       }
@@ -106,10 +111,10 @@
   }
 }
 @media screen and (max-width: 429px) {
-  #taken-ama {
+  #gallery {
     .container-fluid {
       .flex-column {
-        .title-with-ama {
+        .gallery__title {
           display: flex;
           align-items: center;
           h5 {
