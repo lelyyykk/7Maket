@@ -166,6 +166,36 @@ button {
   padding: 16px 11px;
 }
 
+/*поміняй потім від 20 до 27, бо ти в index один блок заархівувала*/
+button#slick-slide-control0 {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  height: 14px;
+  width: 15px;
+  background-color: transparent;
+  margin: 2px;
+}
+
+/*поміняй потім від 20 до 27, бо ти в index один блок заархівувала*/
+button#slick-slide-control1 {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  height: 14px;
+  width: 15px;
+  background-color: transparent;
+  margin: 2px;
+}
+
+/*поміняй потім від 20 до 27, бо ти в index один блок заархівувала*/
+button#slick-slide-control2 {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  height: 14px;
+  width: 15px;
+  background-color: transparent;
+  margin: 2px;
+}
+
 /*
   ========================================
   media for banner

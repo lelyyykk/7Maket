@@ -61,6 +61,18 @@
     }
   }
 }
+$prefix: "slick-slide-control";
+
+@for $i from 0 through 2 { /*поміняй потім від 20 до 27, бо ти в index один блок заархівувала*/
+  button##{$prefix}#{$i} {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    height: 14px;
+    width: 15px;
+    background-color: transparent;
+    margin: 2px;
+  }
+}
 /*
   ========================================
   media for banner
