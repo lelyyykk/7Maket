@@ -3,7 +3,9 @@
   background-color: $red-color;
   height: 655px;
   position: relative;
+  /*
   top: 125px;
+  */
   @include slider;
   button {
     top: 90%;
