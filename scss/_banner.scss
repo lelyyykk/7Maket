@@ -1,7 +1,7 @@
 @import "mixin", "variables";
 .banner__slider {
   background-color: $red-color;
-  height: 655px;
+  height: 659px;
   position: relative;
   /*
   top: 125px;
@@ -33,9 +33,11 @@
             text-align: center;
             width: 100%;
             position: absolute;
-            top: 25%;
+            top: 26%;
             z-index: 10;
             font-size: 92px;
+            margin-left: -9px;
+            letter-spacing: 2px;
           }
           img {
             width: 1517px;
@@ -44,7 +46,7 @@
           .slider-item__container {
             position: absolute;
             text-align: center;
-            top: 50%;
+            top: 329px;
             z-index: 10;
             display: flex;
             flex-direction: row;

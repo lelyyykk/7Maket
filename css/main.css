@@ -64,7 +64,7 @@ button {
 
 .banner__slider {
   background-color: #de5d5d;
-  height: 655px;
+  height: 659px;
   position: relative;
   /*
   top: 125px;
@@ -127,9 +127,11 @@ button {
   text-align: center;
   width: 100%;
   position: absolute;
-  top: 25%;
+  top: 26%;
   z-index: 10;
   font-size: 92px;
+  margin-left: -9px;
+  letter-spacing: 2px;
 }
 .banner__slider .container-fluid .row .col-md-4 .slider-item img {
   width: 1517px;
@@ -138,7 +140,7 @@ button {
 .banner__slider .container-fluid .row .col-md-4 .slider-item .slider-item__container {
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 329px;
   z-index: 10;
   display: flex;
   flex-direction: row;
@@ -1129,7 +1131,13 @@ textarea.error::placeholder {
   display: flex;
   align-items: center;
   z-index: 10;
-  /*position: fixed;*/
+  /*
+  position: fixed;
+  */
+}
+.header .container .row .col-4 img {
+  margin-left: -30px;
+  margin-top: -8px;
 }
 .header .container .row .col-8 {
   display: flex;
@@ -1153,6 +1161,8 @@ textarea.error::placeholder {
 .header .container .row .col-8 .header__nav .header__nav-block ul {
   display: flex;
   text-align: center;
+  margin-left: -65px;
+  margin-top: -5px;
 }
 .header .container .row .col-8 .header__nav .header__nav-block ul li {
   margin: 0 22px;

@@ -7,11 +7,16 @@
   display: flex;
   align-items: center;
   z-index: 10;
-  /*position: fixed;*/
+  /*
+  position: fixed;
+  */
   .container {
     .row {
       .col-4 {
-        img {}
+        img {
+          margin-left: -30px;
+          margin-top: -8px;
+        }
       }
       .col-8 {
         display: flex;
@@ -33,6 +38,8 @@
             ul {
               display: flex;
               text-align: center;
+              margin-left: -65px;
+              margin-top: -5px;
 
               li {
                 margin: 0 22px;
