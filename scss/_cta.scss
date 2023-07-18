@@ -1,0 +1,247 @@
+@import "mixin", "variables";
+
+#cta {
+  background-color: $light-red;
+  height: 722px;
+  display: flex;
+  align-items: center;
+  .container {
+    .row {
+      .col-lg-6 {
+
+        .app-icon {
+          display: flex;
+          width: 246px;
+          height: 246px;
+          position: relative;
+          z-index: 2;
+        }
+
+        .shadow-icon {
+          position: absolute;
+          top: 77px;
+          left: 34px;
+          z-index: 1;
+          width: 67%;
+          height: 100%;
+        }
+      }
+        .col-lg-6 {
+          .for-text {
+            margin-left: -134px;
+            .prg {
+              font-size: 48px;
+              font-weight: 600;
+              color: #fff;
+            }
+            .ppl {
+              color: #fff;
+              font-size: 25px;
+            }
+          }
+          .app-button {
+            display: flex;
+            &__container {
+              border: 3px solid #ffffff;
+              border-radius: 4px;
+              margin: 5px;
+              @include my-button;
+            }
+          }
+        }
+      }
+    }
+  }
+@media screen and (max-width: 1198px) {
+  #cta {
+    .container {
+      .row {
+        .col-lg-6 {
+          .shadow-icon {
+            top: 119px;
+            left: 19px;
+            z-index: 1;
+            width: 81%;
+            height: 74%;
+          }
+        }
+      }
+    }
+    .col-lg-6 {
+      .app-button {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+@media screen and (max-width: 990px) {
+  #cta {
+    .container {
+      .row {
+        .col-lg-6 {
+          .shadow-icon {
+            top: 40px;
+            left: 270px;
+            z-index: 1;
+            width: 54%;
+            height: 131%;
+          }
+        }
+        .col-lg-6 {
+          z-index: 2;
+          margin-top: 43px;
+          .for-text {
+            margin-left: 0;
+            .prg {
+              text-align: center;
+            }
+            .ppl {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 766px) {
+  #cta {
+    height: auto;
+
+    .container {
+      .row {
+        .col-lg-6 {
+          .app-icon {
+            margin-top: 25px;
+
+          }
+
+          .shadow-icon {
+            top: 71px;
+            left: 151px;
+            z-index: 1;
+            width: 84%;
+            height: 107%;
+          }
+        }
+
+        .col-lg-6 {
+          z-index: 2;
+          margin-top: 43px;
+          margin-bottom: 38px;
+
+          .for-text {
+            margin-left: 0;
+
+            .prg {
+              text-align: center;
+            }
+
+            .ppl {
+              text-align: center;
+            }
+          }
+
+          .app-button {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 680px) {
+  #cta {
+    .container {
+      .row {
+        .col-lg-6 {
+          .app-icon {
+          }
+
+          .shadow-icon {
+            top: 27px;
+            left: 151px;
+            z-index: 1;
+            width: 65%;
+            height: 107%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 760px) {
+  #cta {
+    .container {
+      .row {
+        .col-lg-6 {
+          .app-button {
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 470px){
+  #cta {
+
+    .container {
+      .row {
+        .col-lg-6 {
+          .for-text {
+            .prg {
+              font-size: 30px;
+            }
+            .ppl {
+              font-size: 20px;
+            }
+          }
+          .app-button {
+              &__container {
+                padding: 0 9px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+@media screen and (max-width: 430px) {
+  #cta {
+    .container {
+      .row {
+        .col-lg-6 {
+
+          .app-icon {
+            width: 215px;
+            height: 210px;
+          }
+
+          .shadow-icon {
+            top: 51px;
+            left: 108px;
+            z-index: 1;
+            width: 50%;
+            height: 107%;
+          }
+          }
+        }
+        .col-lg-6 {
+          .for-text {
+
+            .prg {
+            font-size: 35px;
+            }
+            .ppl {
+
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }

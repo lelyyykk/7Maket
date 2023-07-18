@@ -1,0 +1,51 @@
+@import "mixin", "variables";
+.footer {
+  background-color: #f4f4f4;
+  height: 222px;
+  display: flex;
+  align-items: center;
+  .container {
+    .row {
+      .col-md-6 {
+        p {
+        }
+      }
+
+      .col-md-6 {
+        p {
+
+        }
+        .form-inline {
+          input {
+            width: 314px;
+            height: 49px;
+            background-color: #f4f4f4;
+            border-color: #757575;
+          }
+          .btn-my-color {
+            cursor: pointer;
+            border: none;
+            background-color: #F06463;
+            color: #fff;
+            height: 49px;
+            width: 100px;
+            border-radius: 4px;
+
+          }
+        }
+      }
+    }
+  }
+  p {
+    color: #757575;
+  }
+}
+input.error,
+textarea.error {
+  box-shadow: inset 0 0 10px 0 $red-color;
+  border-color: $red-color;
+}
+input.error::placeholder,
+textarea.error::placeholder {
+  color: $red-color;
+}

@@ -1,0 +1,54 @@
+@mixin slider {
+  button {
+    cursor: pointer;
+    font-size: 0;
+    list-style: disc;
+    height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    border: 1px solid #fff;
+
+    &:active {
+      color: #fff;
+    }
+  }
+    li::marker {
+      font-size: 0;
+    }
+  .slick-dots {
+    display: flex;
+    .slick-active button {
+      background-color: #fff;
+    }
+    li {
+      list-style-type: none;
+      margin: 0 10px;
+    }
+  }
+}
+@mixin button {
+  border-radius: 50%;
+  height: 14px;
+  width: 15px;
+}
+@mixin my-button {
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+    text-decoration: none;
+    img {
+      width: 45px;
+      height: 45px;
+    }
+    p {
+      color: #fff;
+      font-size: 30px;
+      margin: 0;
+      padding: 16px 11px;
+    }
+  }
+}

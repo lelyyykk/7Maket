@@ -66,6 +66,7 @@ button {
   background-color: #de5d5d;
   height: 655px;
   position: relative;
+  top: 125px;
 }
 .slider__banner button {
   cursor: pointer;
@@ -294,7 +295,7 @@ button {
   font-size: 3.3rem;
 }
 #why-ama .container .mt-5 {
-  margin-top: 7rem !important;
+  margin-top: 11rem !important;
 }
 #why-ama .container .row h5 {
   color: #6a6a6a;

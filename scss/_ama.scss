@@ -1,0 +1,36 @@
+@import "mixin", "variables";
+#why-ama {
+  margin: auto;
+  .container {
+    h1 {
+      font-size: 3.3rem;
+    }
+    .mt-5 {
+      margin-top: 11rem!important;
+    }
+    .row {
+      h5 {
+        color: $grey-color;
+        font-size: 1.15rem;
+        font-weight: 600;
+      }
+      .my-4 {
+        margin-bottom: 0.1rem!important;
+      }
+      p {
+        color: $grey-color;
+      }
+    }
+  }
+}
+@media  screen and (max-width: 1405px) {
+  #why-ama {
+    margin-top: 20px;
+
+    .container {
+      .mt-5 {
+        margin-top: 10rem !important;
+      }
+    }
+  }
+}

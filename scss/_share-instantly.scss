@@ -1,0 +1,248 @@
+@import "mixin", "variables";
+#share {
+  background: #262626;
+  .container-fluid {
+    .row {
+      .col-md-6 {
+        .mt-5 {
+          margin-top: 17rem!important;
+        }
+        .iphone {
+
+        }
+      }
+      .col-md-6 {
+        .mt-5 {
+          margin-top: 15rem!important;
+        }
+        .block__text {
+          h5 {
+            color: #fff;
+            font-size: 3.25rem;
+          }
+          p {
+            width: 383px;
+          }
+        }
+        .slider-video {
+          .slider-elements {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            img {}
+            p {}
+          }
+        }
+      }
+    }
+  }
+  p {
+    color: #a7a7a7;
+  }
+  .slider-video {
+    flex-direction: column;
+    @include slider;
+    .slider-elements {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 25px;
+      .slick-dots {
+        .slick-active button {
+          background-color: #fff;
+        }
+      }
+      img {
+      }
+      p {
+        width: 249px;
+        margin-left: 32px;
+      }
+    }
+  }
+  ul {
+    padding: 0;
+    display: flex;
+  }
+}
+$prefix: "slick-slide-control";
+
+@for $i from 10 through 12 { /*поміняй потім від 20 до 27, бо ти в index один блок заархівувала*/
+  button##{$prefix}#{$i} {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    height: 14px;
+    width: 15px;
+    background-color: transparent;
+    margin: 2px;
+  }
+}
+/*
+    ========================================
+    media
+    ========================================
+*/
+@media screen and (max-width: 1385px) {
+  #share {
+    .container-fluid {
+      .row {
+        .col-md-6 {
+          .iphone {
+            width: 500px;
+          }
+        }
+        .col-md-6 {
+          .block__text {
+            margin-top: -25%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 945px) {
+  #share {
+    .container-fluid {
+      .row {
+        .col-md-6 {
+        .iphone {
+          width: 445px;
+        }
+      }
+
+        .col-md-6 {
+          .block__text {
+            margin-top: -100px;
+            h5 {
+            font-size: 2.25rem!important;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+          .slider-video {
+            .slider-elements {
+              align-items: center;
+              img {
+                width: 107px;
+              }
+              p {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 787px) {
+  #share {
+    height: 800px;
+    .container-fluid {
+      .row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .col-md-6 {
+          .iphone {
+          }
+        }
+        .col-md-6 {
+          .mt-5 {
+            margin-top: 8rem!important;
+          }
+          .block__text {
+            h5 {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  #share {
+    .container-fluid {
+      .row {
+        .col-md-6 {
+          .block__text {
+            align-items: center;
+            h5 {
+              text-align: center;
+            }
+          }
+          .slider-video {
+            .slider-elements {
+              justify-content: center;
+            }
+            .slick-dots {
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  #share {
+    .container-fluid {
+      .row {
+        .col-md-6 {
+          .iphone {
+            width: 405px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  #share {
+    height: 850px;
+    .container-fluid {
+      .row {
+        .col-md-6 {
+          .iphone {
+            width: 362px;
+          }
+        }
+        .col-md-6 {
+          .block__text {
+            p {
+              width: 290px;
+              text-align: center;
+            }
+          }
+          .slider-video {
+            .slider-elements {
+             flex-direction: column;
+              img {
+                padding-bottom: 10px;
+              }
+              p {
+                text-align: center;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  #share {
+    height: 760px;
+    .container-fluid {
+      .row {
+        .col-md-6 {
+          .iphone {
+            width: 313px;
+          }
+        }
+      }
+    }
+  }
+}

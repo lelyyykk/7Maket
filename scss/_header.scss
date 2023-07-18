@@ -1,0 +1,197 @@
+@import "mixin", "variables";
+
+.header {
+  background-color: $red-color;
+  height: 126px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  position: fixed;
+  .container {
+    .row {
+      .col-4 {
+        img {}
+      }
+      .col-8 {
+        display: flex;
+        justify-self: end;
+        .header__nav {
+          display: flex;
+          flex-wrap: wrap;
+          .header__burger-menu {
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            position: fixed;
+          }
+          .header__nav-block {
+            display: flex;
+            align-items: center;
+
+            ul {
+              display: flex;
+              text-align: center;
+
+              li {
+                margin: 0 22px;
+                position: relative;
+
+                a {
+                  font-size: 18px;
+                  color: #ffffff;
+                  text-decoration: none;
+                  position: relative;
+                }
+
+                a:hover::before {
+                  content: "";
+                  position: absolute;
+                  top: -44px;
+                  left: -30%;
+                  width: 160%;
+                  height: 7px;
+                  background-color: #ffffff;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*
+  ========================================
+  Media
+  ========================================
+*/
+@media screen and (max-width: 1405px) {
+  .header {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    .container {
+      display: flex;
+      justify-content: center;
+      .row {
+        .col-4 {
+          img {
+            margin-right: 84px;
+          }
+        }
+      }
+    }
+    .col-8 {
+      .header__nav {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        margin-left: 309px;
+
+        .header__burger-menu {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          z-index: 3;
+          .bar {
+            width: 45px;
+            height: 6px;
+            background-color: #FFFFFF;
+            margin: 2px 0;
+            transition: all 0.3s ease;
+            border-radius: 16px;
+          }
+          &:active {
+            .bar {
+              background-color: #FFFFFF;
+            }
+          }
+        }
+        .header__nav-block {
+          display: none;
+          left: 0;
+          width: 100%;
+          z-index: 2;
+          position: relative;
+          top: 80px;
+          ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            margin: 0 0 15px 0;
+            li {
+              display: none;
+            }
+          }
+          &.show {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: fixed;
+            background-color: $red-color;
+
+            li {
+              display: block;
+              margin: 15px;
+
+              a {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  .header {
+
+    .container {
+      .row {
+        .col-4 {
+          img {
+            margin-right: 46px;
+          }
+        }
+      }
+    }
+    .col-8 {
+      .header__nav {
+        margin-left: 145px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 370px){
+  .header {
+
+    .container {
+      .row {
+        .col-4 {
+          img {
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+    .col-8 {
+      .header__nav {
+        margin-left: 110px;
+      }
+    }
+  }
+}
