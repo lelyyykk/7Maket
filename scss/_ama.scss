@@ -15,6 +15,14 @@
           margin-left: -40px;
           margin-top: 10px;
         }
+        .touch {
+          margin-left: -1px;
+          margin-top: 10px;
+        }
+        .filters {
+          margin-left: 38px;
+          margin-top: 10px;
+        }
         }
         h5 {
           color: $grey-color;
@@ -30,11 +38,12 @@
       }
 
     }
-  }
   .my-4 {
     margin-top: 3.4rem!important;
   }
+
 }
+
 /*
   ========================================
   media for overview
@@ -51,8 +60,49 @@
     }
   }
 }
-@media  screen and (max-width: 800px) {
+@media  screen and (max-width: 991px) {
   #overview {
     height: inherit;
+    .container {
+      .row {
+        .col-md-4 {
+          .focus {
+            margin-left: -9px;
+            margin-top: 10px;
+          }
+          .touch {
+            margin-left: -1px;
+            margin-top: 10px;
+          }
+          .filters {
+            margin-left: 4px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media  screen and (max-width: 767px) {
+  #overview {
+    .container {
+      .row {
+        .col-md-4 {
+          .focus {
+            margin-left: 0;
+            margin-top: 0;
+          }
+          .touch {
+            margin-left: 0;
+            margin-top: 0;
+          }
+          .filters {
+            margin-left: 0;
+            margin-top: 0;
+          }
+        }
+      }
+    }
   }
 }

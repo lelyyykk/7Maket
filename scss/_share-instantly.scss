@@ -27,15 +27,16 @@
             margin-bottom: 18px;
           }
           p {
-            width: 383px;
+            width: 442px;
             margin-bottom: 59px;
+            font-size: 18px;
           }
         }
         .share__slider {
           .slider-elements {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 25px;
+
             img {}
             p {}
           }
@@ -52,7 +53,7 @@
     .slider-elements {
       display: flex;
       align-items: flex-start;
-      margin-bottom: 25px;
+      margin-bottom: 17px;
       .slick-dots {
         .slick-active button {
           background-color: #fff;
@@ -107,6 +108,7 @@ $prefix: "slick-slide-control";
     }
   }
 }
+
 @media screen and (max-width: 945px) {
   #share {
     .container-fluid {
@@ -124,6 +126,7 @@ $prefix: "slick-slide-control";
             font-size: 2.25rem!important;
             }
             p {
+              width: 360px;
               font-size: 14px;
             }
           }

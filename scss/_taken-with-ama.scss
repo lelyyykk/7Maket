@@ -15,10 +15,14 @@
         h5 {
           font-size: 3.00rem !important;
           color: $light-red;
+          margin-left: 98px;
         }
 
         p {
-          width: 392px;
+          width: 442px;
+          font-size: 18px;
+          color: $grey-color;
+          margin-left: 102px;
         }
       }
     }
@@ -33,7 +37,7 @@
         .gallery__block {
           .photo {
             width: 100%;
-            height: auto;
+            height: 516px;
             transition: transform 0.4s ease;
             z-index: 1;
             position: relative;
@@ -77,25 +81,66 @@
     media for gallery
     ========================================
 */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1800px) {
   #gallery {
     .container-fluid {
-      .flex-column {
-        .gallery__title {
-          h5 {
-            font-size: 2rem!important;
+      .gallery__container {
+        .col-md-3 {
+          .gallery__block {
+            .photo {
+              width: 100%;
+              height: auto;
+            }
           }
         }
       }
     }
   }
 }
+@media screen and (max-width: 1200px) {
+  #gallery {
+    .container-fluid {
+      .flex-column {
+        .gallery__title {
+          h5 {
+            font-size: 2rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
   #gallery {
     .container-fluid {
+      .gallery__title {
+        .ml-md-4 {
+          margin-left: 1rem!important;
+        }
+        .ml-md-5 {
+          margin-left: 1rem!important;
+        }
+      }
       .gallery__container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+@media screen and (max-width: 584px) {
+  #gallery {
+    .container-fluid {
+      .gallery__title {
+
+        h5 {
+          margin-left: 10px!important;
+        }
+
+        p {
+          margin-left: 10px!important;
+        }
       }
     }
   }
@@ -110,7 +155,7 @@
     }
   }
 }
-@media screen and (max-width: 429px) {
+@media screen and (max-width: 460px) {
   #gallery {
     .container-fluid {
       .flex-column {

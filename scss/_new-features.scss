@@ -12,7 +12,8 @@
             font-size: 52px;
           }
           p {
-            width: 385px;
+            width: 442px;
+            font-size: 18px;
           }
         }
         .features__slider {
@@ -128,7 +129,7 @@ $prefix: "slick-slide-control";
     }
   }
 }
-@media screen and (max-width: 913px) {
+@media screen and (max-width: 950px) {
   .img-nexus {
     height: 537px;
   }
