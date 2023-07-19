@@ -870,6 +870,13 @@ button#slick-slide-control27 {
   padding: 0;
   cursor: pointer;
 }
+#gallery .container-fluid .gallery__container .col-md-3 .gallery__block .gallery__block-under button .heart {
+  color: #f06464;
+}
+#gallery .container-fluid .gallery__container .col-md-3 .gallery__block .gallery__block-under button .all-heart {
+  color: #f06464;
+  display: none;
+}
 #gallery .container-fluid .gallery__container .col-md-3 .gallery__block .gallery__block-under button span {
   color: #f06464;
 }
@@ -947,20 +954,24 @@ button#slick-slide-control27 {
 }
 #download .container .row .col-lg-6 .shadow-icon {
   position: absolute;
-  top: 59px;
-  left: 22px;
+  top: 29px;
+  left: 43px;
   z-index: 1;
-  width: 68%;
-  height: 96%;
+  width: 64%;
+  height: 125%;
   margin-left: 69px;
 }
 #download .container .row .col-lg-6 .download__text {
-  margin-left: -134px;
+  margin-left: -338px;
+  margin-top: -40px;
 }
 #download .container .row .col-lg-6 .download__text .download__prg {
   font-size: 48px;
   font-weight: 600;
   color: #fff;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  line-height: 1.2;
 }
 #download .container .row .col-lg-6 .download__text .download__ppl {
   color: #fff;
@@ -968,6 +979,7 @@ button#slick-slide-control27 {
 }
 #download .container .row .col-lg-6 .download-button {
   display: flex;
+  margin-left: -215px;
 }
 #download .container .row .col-lg-6 .download-button__container {
   border: 3px solid #ffffff;
@@ -998,24 +1010,34 @@ button#slick-slide-control27 {
     ========================================
 */
 @media screen and (max-width: 1198px) {
+  #download .container .row .col-lg-6 .app-icon {
+    margin-left: 0;
+    margin-top: 0;
+  }
   #download .container .row .col-lg-6 .shadow-icon {
-    top: 119px;
-    left: 19px;
+    top: 29px;
+    left: -55px;
     z-index: 1;
     width: 81%;
-    height: 74%;
+    height: 116%;
   }
   #download .col-lg-6 .download-button {
     flex-wrap: wrap;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  #download .col-lg-6 .download-button .download-button {
+    display: flex;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 990px) {
   #download .container .row .col-lg-6 .shadow-icon {
-    top: 40px;
-    left: 270px;
+    top: 8px;
+    left: 185px;
     z-index: 1;
-    width: 54%;
-    height: 131%;
+    width: 49%;
+    height: 150%;
   }
   #download .container .row .col-lg-6 {
     z-index: 2;
@@ -1030,6 +1052,9 @@ button#slick-slide-control27 {
   #download .container .row .col-lg-6 .download__text .download__ppl {
     text-align: center;
   }
+  #download .container .row .col-lg-6 .download-button {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 766px) {
   #download {
@@ -1039,11 +1064,11 @@ button#slick-slide-control27 {
     margin-top: 25px;
   }
   #download .container .row .col-lg-6 .shadow-icon {
-    top: 71px;
-    left: 151px;
+    left: 86px;
     z-index: 1;
-    width: 84%;
-    height: 107%;
+    width: 70%;
+    height: 118%;
+    top: 42px;
   }
   #download .container .row .col-lg-6 {
     z-index: 2;
@@ -1063,20 +1088,29 @@ button#slick-slide-control27 {
     justify-content: center;
   }
 }
-@media screen and (max-width: 680px) {
-  #download .container .row .col-lg-6 .shadow-icon {
-    top: 27px;
-    left: 151px;
-    z-index: 1;
-    width: 65%;
-    height: 107%;
-  }
-}
 @media screen and (max-width: 760px) {
   #download .container .row .col-lg-6 .download-button {
     justify-content: center;
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 680px) {
+  #download .container .row .col-lg-6 .shadow-icon {
+    top: 52px;
+    left: 113px;
+    z-index: 1;
+    width: 65%;
+    height: 130%;
+  }
+}
+@media screen and (max-width: 520px) {
+  #download .container .row .col-lg-6 .shadow-icon {
+    top: 27px;
+    left: 80px;
+    z-index: 1;
+    width: 65%;
+    height: 138%;
   }
 }
 @media screen and (max-width: 470px) {
@@ -1096,17 +1130,31 @@ button#slick-slide-control27 {
     height: 210px;
   }
   #download .container .row .col-lg-6 .shadow-icon {
-    top: 51px;
-    left: 108px;
+    top: 24px;
+    left: 60px;
     z-index: 1;
-    width: 50%;
-    height: 107%;
+    width: 64%;
+    height: 135%;
   }
   #download .container .col-lg-6 .download__text .download__prg {
     font-size: 35px;
   }
   #download .container .col-lg-6 .download__text .download__ppl {
     font-size: 25px;
+  }
+}
+@media screen and (max-width: 417px) {
+  #download .container .row .col-lg-6 .shadow-icon {
+    top: 33px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #download .container .row .col-lg-6 .shadow-icon {
+    top: 24px;
+    left: 23px;
+    z-index: 1;
+    width: 66%;
+    height: 147%;
   }
 }
 #compatibility {

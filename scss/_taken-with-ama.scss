@@ -65,7 +65,13 @@
               border: none;
               padding: 0;
               cursor: pointer;
-
+              .heart {
+                color: #f06464
+              }
+              .all-heart {
+                color: #f06464;
+                display: none;
+              }
               span {
                 color: $light-red;
               }
