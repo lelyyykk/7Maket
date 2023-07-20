@@ -164,7 +164,7 @@ main {
   text-decoration: none;
 }
 .banner__slider .container-fluid .row .col-md-4 .slider-item .slider-item__container a:hover {
-  opacity: 0.4;
+  opacity: 0.7;
 }
 .banner__slider .container-fluid .row .col-md-4 .slider-item .slider-item__container a img {
   width: 45px;
@@ -1031,7 +1031,7 @@ button#slick-slide-control27 {
   text-decoration: none;
 }
 #download .container .row .col-lg-6 .download-button__container a:hover {
-  opacity: 0.4;
+  opacity: 0.7;
 }
 #download .container .row .col-lg-6 .download-button__container a img {
   width: 45px;
