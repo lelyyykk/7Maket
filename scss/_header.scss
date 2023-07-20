@@ -2,20 +2,18 @@
 
 .header {
   background-color: $red-color;
-  height: 126px;
+  height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
   z-index: 10;
-  /*
   position: fixed;
-  */
   .container {
     .row {
       .col-4 {
         img {
           margin-left: -30px;
-          margin-top: -13px;
+          margin-top: 16px;
         }
       }
       .col-8 {
@@ -35,11 +33,12 @@
             display: flex;
             align-items: center;
 
+
             ul {
               display: flex;
               text-align: center;
               margin-left: -65px;
-              margin-top: -5px;
+              margin-top: 19px;
 
               li {
                 margin: 0 22px;
@@ -69,6 +68,9 @@
       }
     }
   }
+}
+.scroll-stop {
+  scroll-padding-top: 50vh; // Або використайте scroll-margin-top: 50vh;
 }
 /*
   ========================================
@@ -137,8 +139,9 @@
             flex-direction: column;
             align-items: center;
             padding: 0;
-            margin: 0 0 15px 0;
+            margin-left: 0!important;
             li {
+              margin: 5px 22px!important;
               display: none;
             }
           }

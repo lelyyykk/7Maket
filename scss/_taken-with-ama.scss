@@ -58,6 +58,8 @@
             p {
               color: #ffffff;
               margin: 6px;
+              font-size: 19px;
+              padding-right: 110px;
             }
 
             button {
@@ -66,14 +68,17 @@
               padding: 0;
               cursor: pointer;
               .heart {
-                color: #f06464
+                color: #f06464;
+                font-size: 28px;
               }
               .all-heart {
                 color: #f06464;
                 display: none;
+                font-size: 28px;
               }
               span {
                 color: $light-red;
+                font-size: 25px;
               }
             }
           }
@@ -103,6 +108,36 @@
     }
   }
 }
+@media screen and (max-width: 1645px) {
+  #gallery {
+    .container-fluid {
+      .gallery__container {
+        .col-md-3 {
+          .gallery__block {
+            .gallery__block-under {
+              p {
+                padding-right: 0;
+                font-size: 18px;
+              }
+              button {
+
+               span {
+                 font-size: 16px;
+               }
+                .heart {
+                  font-size: 18px;
+                }
+                .all-heart {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 1200px) {
   #gallery {
     .container-fluid {
@@ -110,6 +145,30 @@
         .gallery__title {
           h5 {
             font-size: 2rem !important;
+          }
+        }
+        .gallery__container {
+          .col-md-3 {
+            .gallery__block {
+              .gallery__block-under {
+                p {
+                  padding-right: 0;
+                  font-size: 18px;
+                }
+                button {
+
+                  span {
+                    font-size: 16px;
+                  }
+                  .heart {
+                    font-size: 18px;
+                  }
+                  .all-heart {
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
           }
         }
       }

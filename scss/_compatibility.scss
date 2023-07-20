@@ -2,17 +2,20 @@
 #compatibility {
   display: flex;
   align-items: center;
-  height: 458px;
+  height: 448px;
   background-color: #e7e7e7;
 
   .container {
+    padding-left: 86px;
+    padding-bottom: 45px;
     h5 {
-      padding-bottom: 25px;
+      padding-bottom: 12px;
       border-bottom: 2px solid #cbcbcb;
       color: #666666;
       font-weight: 600;
-      letter-spacing: 2px;
+      letter-spacing: 1.2px;
       font-size: 1.45rem !important;
+      width: 971px;
     }
 
     .row {
@@ -25,6 +28,16 @@
           font-weight: 600;
 
         }
+        p {
+          width: 438px;
+        }
+      }
+      .block-1 {
+        padding-right: 0;
+      }
+      .block-2 {
+        padding-left: 0;
+
       }
     }
   }
@@ -34,23 +47,81 @@
     media for compatibility
     ========================================
 */
-@media screen and (max-width: 470px){
+@media screen and (max-width: 1400px) {
   #compatibility {
-      height: 500px;
     .container {
+      padding-left: 0;
+      padding-bottom: 0;
+
       h5 {
-        text-align: center;
-        margin-top: 30px;
-        }
+        width: inherit;
+
+      }
+
       .row {
         .col-lg-6 {
+          padding-top: 25px;
 
+          h6 {
+            color: #666666;
+            margin: 0;
+            font-weight: 600;
+
+          }
+
+          p {
+            width: 438px;
+          }
+        }
+
+        .block-2 {
+          padding-left: 19px;
+
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  #compatibility {
+    height: 600px;
+
+    .container {
+      h5 {
+        width: 396px;
+        margin: auto;
+        text-align: center;
+      }
+
+      .row {
+        .col-lg-6 {
           p, h6 {
             text-align: center;
+            margin: auto;
+
+          }
+          p {
+            width: 380px;
           }
           img {
             display: flex;
             margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 430px) {
+  #compatibility {
+    .container {
+      h5 {
+        width: 317px;
+      }
+      .row {
+        .col-lg-6 {
+          p {
+            width: 280px;
           }
         }
       }
@@ -66,6 +137,15 @@
             width: 70%;
           }
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  #compatibility {
+    .container {
+      h5 {
+        width: 280px;
       }
     }
   }

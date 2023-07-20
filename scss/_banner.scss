@@ -1,14 +1,11 @@
 @import "mixin", "variables";
 .banner__slider {
   background-color: $red-color;
-  height: 661px;
+  height: 688px;
   position: relative;
-  /*
-  top: 125px;
-  */
   @include slider;
   button {
-    top: 594px;
+    top: 615px;
     margin-left: -27px;
     z-index: 1;
   }
@@ -34,20 +31,21 @@
             text-align: center;
             width: 100%;
             position: absolute;
-            top: 26%;
+            padding-left: 8px;
+            top: 28%;
             z-index: 10;
             font-size: 92px;
             margin-left: -9px;
             letter-spacing: 2px;
           }
           img {
-            width: 1517px;
-            height: 649px;
+            width: 1571px;
+            height: 687px;
           }
           .slider-item__container {
             position: absolute;
             text-align: center;
-            top: 329px;
+            top: 356px;
             z-index: 10;
             display: flex;
             flex-direction: row;
@@ -88,7 +86,7 @@
 }
 @media screen and (max-width: 1405px) {
   .banner__slider {
-    top: 123px;
+
     .container-fluid {
       .row {
         .col-md-4 {
@@ -183,7 +181,7 @@
     }
   }
 }
-@media screen and (max-width: 631px) {
+@media screen and (max-width: 660px) {
   .banner__slider {
     height: 487px;
     button {
