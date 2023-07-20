@@ -69,9 +69,7 @@
     }
   }
 }
-.scroll-stop {
-  scroll-padding-top: 50vh; // Або використайте scroll-margin-top: 50vh;
-}
+
 /*
   ========================================
   Media
@@ -143,10 +141,14 @@
             li {
               margin: 5px 22px!important;
               display: none;
+              a:hover {
+               color: $black-color!important;
+              }
+              a:hover::before {
+                display: none;
+              }
             }
-            a:hover::before {
-              display: none;
-            }
+
           }
           &.show {
             display: flex;

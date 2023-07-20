@@ -1417,10 +1417,6 @@ textarea.error::placeholder {
   text-align: center;
 }
 
-.scroll-stop {
-  scroll-padding-top: 50vh;
-}
-
 /*
   ========================================
   Media
@@ -1489,7 +1485,10 @@ textarea.error::placeholder {
     margin: 5px 22px !important;
     display: none;
   }
-  .header .col-8 .header__nav .header__nav-block ul a:hover::before {
+  .header .col-8 .header__nav .header__nav-block ul li a:hover {
+    color: #262626 !important;
+  }
+  .header .col-8 .header__nav .header__nav-block ul li a:hover::before {
     display: none;
   }
   .header .col-8 .header__nav .header__nav-block.show {
