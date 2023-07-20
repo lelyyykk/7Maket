@@ -11,9 +11,18 @@
   .container {
     .row {
       .col-4 {
-        img {
-          margin-left: -30px;
-          margin-top: 16px;
+        a {
+          text-decoration: none;
+          h2 {
+            font-size: 57px;
+            font-weight: 700;
+            margin-left: -34px;
+            color: #fff;
+
+            &:hover {
+              color: $black-color;
+            }
+          }
         }
       }
       .col-8 {
@@ -110,7 +119,7 @@
           justify-content: center;
           align-items: center;
           z-index: 3;
-          top: 40px;
+          top: 30px;
           .bar {
             width: 45px;
             height: 6px;
@@ -121,7 +130,7 @@
           }
           &:active {
             .bar {
-              background-color: #FFFFFF;
+              background-color: $black-color;
             }
           }
         }
@@ -190,7 +199,7 @@
         margin-left: 145px;
 
         .header__burger-menu {
-          top: 42px;
+          top: 30px;
         }
       }
     }

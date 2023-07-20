@@ -23,6 +23,7 @@
             background-color: #f4f4f4;
             border-color: #757575;
           }
+
           .btn-my-color {
             cursor: pointer;
             border: none;
@@ -31,7 +32,10 @@
             height: 49px;
             width: 100px;
             border-radius: 4px;
-
+            &:hover {
+              background-color: #f4f4f4;
+              color: #F06464;
+            }
           }
         }
       }
