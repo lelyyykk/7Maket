@@ -1489,6 +1489,9 @@ textarea.error::placeholder {
     margin: 5px 22px !important;
     display: none;
   }
+  .header .col-8 .header__nav .header__nav-block ul a:hover::before {
+    display: none;
+  }
   .header .col-8 .header__nav .header__nav-block.show {
     display: flex;
     flex-direction: column;
