@@ -9,8 +9,8 @@ $(document).ready(function() {
         slidesToScroll: 1,
         arrows: false,
         dots: true,
-        /*autoplay: true,
-        autoplaySpeed: 1000,*/
+        autoplay: true,
+        autoplaySpeed: 1000,
         cssEase: 'linear'
     });
 });
@@ -128,5 +128,30 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+/*
+    ========================================
+    for scroll
+    ========================================
+*/
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll('a[data-scroll]');
+
+    links.forEach((link) => {
+    link.addEventListener("click", function (event) {
+    event.preventDefault();
+
+        const target = document.querySelector(link.getAttribute("href"));
+        const offset = target.getBoundingClientRect().top + window.scrollY;
+        const windowHeight = window.innerHeight;
+        const scrollToPosition = offset - (windowHeight / 2) + (target.offsetHeight / 2);
+
+                window.scroll({
+                top: scrollToPosition,
+                behavior: "smooth",
+            });
+        });
+    });
+});
 
 
