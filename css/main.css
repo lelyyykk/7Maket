@@ -153,12 +153,18 @@ main {
   border-radius: 4px;
   margin: 15px;
 }
+.banner__slider .container-fluid .row .col-md-4 .slider-item .slider-item__container .slider-item__block a:hover {
+  background: #de5d5d;
+}
 .banner__slider .container-fluid .row .col-md-4 .slider-item .slider-item__container a {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0 20px;
   text-decoration: none;
+}
+.banner__slider .container-fluid .row .col-md-4 .slider-item .slider-item__container a:hover {
+  opacity: 0.4;
 }
 .banner__slider .container-fluid .row .col-md-4 .slider-item .slider-item__container a img {
   width: 45px;
@@ -179,19 +185,18 @@ main {
 @media screen and (max-width: 1445px) {
   .banner__slider .container-fluid .row .col-md-4 .slider-item img {
     width: 1100px;
-    height: 647px;
+    height: 687px;
   }
 }
 @media screen and (max-width: 1138px) {
   .banner__slider .container-fluid .row .col-md-4 .slider-item img {
     width: 942px;
-    height: 655px;
+    height: 685px;
   }
 }
 @media screen and (max-width: 915px) {
   .banner__slider .container-fluid .row .col-md-4 .slider-item img {
     width: 942px;
-    height: 655px;
   }
   .banner__slider .container-fluid .row .col-md-4 .slider-item h1 {
     font-size: 80px;
@@ -212,7 +217,6 @@ main {
 @media screen and (max-width: 763px) {
   .banner__slider .container-fluid .row .col-md-4 .slider-item img {
     width: 657px;
-    height: 655px;
   }
   .banner__slider .container-fluid .row .col-md-4 .slider-item h1 {
     font-size: 70px;
@@ -1016,12 +1020,18 @@ button#slick-slide-control27 {
   border-radius: 4px;
   margin: 5px;
 }
+#download .container .row .col-lg-6 .download-button__container a:hover {
+  background-color: #262626;
+}
 #download .container .row .col-lg-6 .download-button__container a {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0 20px;
   text-decoration: none;
+}
+#download .container .row .col-lg-6 .download-button__container a:hover {
+  opacity: 0.4;
 }
 #download .container .row .col-lg-6 .download-button__container a img {
   width: 45px;
